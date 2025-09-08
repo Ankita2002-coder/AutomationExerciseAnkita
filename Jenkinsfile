@@ -4,6 +4,10 @@ pipeline {
     environment {
         APP_ENV = 'dev'
     }
+    tools {
+    jdk 'jdk24'
+}
+
 
 
     stages {
