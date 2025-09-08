@@ -9,14 +9,13 @@ pipeline {
         stage('Clone') {
             steps {
                 echo 'Cloning repository...'
-                git branch: 'main', url: 'https://github.com/Sovit12/CapstoneProject_AutomationExercise.git'
+                git branch: 'main', url: 'https://github.com/Ankita2002-coder/AutomationExerciseAnkita.git'
             }
         }
 
         stage('Build & Test') {
             steps {
                 echo 'Building the project and running TestNG tests with Maven...'
-                // Clean + compile + run tests
                 bat 'mvn clean test'
             }
         }
@@ -25,8 +24,8 @@ pipeline {
             steps {
                 echo 'Publishing ExtentReports in Jenkins...'
                 publishHTML([
-                    reportDir: 'reports',    // adjust if your ExtentReports folder differs
-                    reportFiles: 'ExtentReports.html',
+                    reportDir: 'reports',               // matches your folder
+                    reportFiles: 'ExtentReports.html',  // file name
                     reportName: 'Extent Report',
                     keepAll: true,
                     allowMissing: false,
@@ -38,6 +37,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo "Deploying to ${env.APP_ENV} environment..."
+                // Add your deployment logic here
             }
         }
     }
