@@ -1,1441 +1,687 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="22" passed="0" failed="0" skipped="22">
+<testng-results ignored="0" total="26" passed="24" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-08T10:04:48 IST" name="AutomationExercise Suite" finished-at="2025-09-08T10:04:49 IST" duration-ms="1137">
+  <suite started-at="2025-09-08T11:51:53 IST" name="Suite" finished-at="2025-09-08T11:55:36 IST" duration-ms="222082">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.RegistrationRunner@610f7aa]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.LoginRunner@68e965f5]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.LogoutRunner@f381794]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-09-08T10:04:48 IST" name="All UI Tests" finished-at="2025-09-08T10:04:49 IST" duration-ms="1137">
-      <class name="com.tests.VerifyTestCaseTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.tests.VerifyTestCaseTest@21b2e768]" started-at="2025-09-08T10:04:49 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1757306089293" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+    <test started-at="2025-09-08T11:51:53 IST" name="Registration Test" finished-at="2025-09-08T11:52:22 IST" duration-ms="28328">
+      <class name="com.TestRunner.RegistrationRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.TestRunner.RegistrationRunner@610f7aa]" started-at="2025-09-08T11:51:54 IST" name="setUpClass" finished-at="2025-09-08T11:51:54 IST" duration-ms="662" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@48b09105]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initPages()[pri:0, instance:com.tests.VerifyTestCaseTest@21b2e768]" started-at="2025-09-08T10:04:49 IST" name="initPages" finished-at="2025-09-08T10:04:49 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setUpClass(java.lang.String,java.lang.String)[pri:0, instance:com.TestRunner.RegistrationRunner@610f7aa]" started-at="2025-09-08T11:51:54 IST" name="setUpClass" finished-at="2025-09-08T11:52:04 IST" duration-ms="9822" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://automationexercise.com/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initPages -->
-        <test-method signature="verifyHomePageIsVisible()[pri:1, instance:com.tests.VerifyTestCaseTest@21b2e768]" started-at="2025-09-08T10:04:49 IST" name="verifyHomePageIsVisible" finished-at="2025-09-08T10:04:49 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.RegistrationRunner@610f7aa]" started-at="2025-09-08T11:52:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-08T11:52:21 IST" duration-ms="16914" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User Registration to Sign-Up Page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Registration"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHomePageIsVisible -->
-        <test-method signature="verifyTestCasesNavigation()[pri:2, instance:com.tests.VerifyTestCaseTest@21b2e768]" started-at="2025-09-08T10:04:49 IST" name="verifyTestCasesNavigation" finished-at="2025-09-08T10:04:49 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.TestRunner.RegistrationRunner@610f7aa]" started-at="2025-09-08T11:52:21 IST" name="tearDownClass" finished-at="2025-09-08T11:52:22 IST" duration-ms="376" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTestCasesNavigation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.VerifyTestCaseTest@21b2e768]" started-at="2025-09-08T10:04:49 IST" name="tearDown" finished-at="2025-09-08T10:04:49 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.TestRunner.RegistrationRunner -->
+    </test> <!-- Registration Test -->
+    <test started-at="2025-09-08T11:52:22 IST" name="Login Test" finished-at="2025-09-08T11:52:37 IST" duration-ms="14685">
+      <class name="com.TestRunner.LoginRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.TestRunner.LoginRunner@68e965f5]" started-at="2025-09-08T11:52:22 IST" name="setUpClass" finished-at="2025-09-08T11:52:22 IST" duration-ms="26" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@18b45500]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.tests.VerifyTestCaseTest -->
-      <class name="com.tests.RegistrationBeforeCheckoutTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.tests.RegistrationBeforeCheckoutTest@623a8092]" started-at="2025-09-08T10:04:49 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1757306089093" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setUpClass(java.lang.String,java.lang.String)[pri:0, instance:com.TestRunner.LoginRunner@68e965f5]" started-at="2025-09-08T11:52:22 IST" name="setUpClass" finished-at="2025-09-08T11:52:29 IST" duration-ms="6765" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://automationexercise.com/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initPageObjects()[pri:0, instance:com.tests.RegistrationBeforeCheckoutTest@623a8092]" started-at="2025-09-08T10:04:49 IST" name="initPageObjects" finished-at="2025-09-08T10:04:49 IST" duration-ms="9" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.LoginRunner@68e965f5]" started-at="2025-09-08T11:52:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-08T11:52:34 IST" duration-ms="5155" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Page with credentials"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initPageObjects -->
-        <test-method signature="verifyPlaceOrderAfterSignup()[pri:0, instance:com.tests.RegistrationBeforeCheckoutTest@623a8092]" started-at="2025-09-08T10:04:49 IST" name="verifyPlaceOrderAfterSignup" finished-at="2025-09-08T10:04:49 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.LoginRunner@68e965f5]" started-at="2025-09-08T11:52:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-08T11:52:36 IST" duration-ms="2218" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Page with credentials"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyPlaceOrderAfterSignup -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.RegistrationBeforeCheckoutTest@623a8092]" started-at="2025-09-08T10:04:49 IST" name="tearDown" finished-at="2025-09-08T10:04:49 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.TestRunner.LoginRunner@68e965f5]" started-at="2025-09-08T11:52:36 IST" name="tearDownClass" finished-at="2025-09-08T11:52:37 IST" duration-ms="286" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.tests.RegistrationBeforeCheckoutTest -->
-      <class name="com.tests.VerifyAllProductsTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.tests.VerifyAllProductsTest@6a03bcb1]" started-at="2025-09-08T10:04:49 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1757306089249" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.TestRunner.LoginRunner -->
+    </test> <!-- Login Test -->
+    <test started-at="2025-09-08T11:52:37 IST" name="Logout Test" finished-at="2025-09-08T11:52:48 IST" duration-ms="11227">
+      <class name="com.TestRunner.LogoutRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.TestRunner.LogoutRunner@f381794]" started-at="2025-09-08T11:52:37 IST" name="setUpClass" finished-at="2025-09-08T11:52:37 IST" duration-ms="17" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@25110bb9]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initPages()[pri:0, instance:com.tests.VerifyAllProductsTest@6a03bcb1]" started-at="2025-09-08T10:04:49 IST" name="initPages" finished-at="2025-09-08T10:04:49 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setUpClass(java.lang.String,java.lang.String)[pri:0, instance:com.TestRunner.LogoutRunner@f381794]" started-at="2025-09-08T11:52:37 IST" name="setUpClass" finished-at="2025-09-08T11:52:42 IST" duration-ms="5580" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://automationexercise.com/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initPages -->
-        <test-method signature="verifyHomePageIsVisible()[pri:1, instance:com.tests.VerifyAllProductsTest@6a03bcb1]" started-at="2025-09-08T10:04:49 IST" name="verifyHomePageIsVisible" finished-at="2025-09-08T10:04:49 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.LogoutRunner@f381794]" started-at="2025-09-08T11:52:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-08T11:52:47 IST" duration-ms="5281" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logout feature"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Logout"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHomePageIsVisible -->
-        <test-method signature="verifyAllProductsPageIsVisible()[pri:2, instance:com.tests.VerifyAllProductsTest@6a03bcb1]" started-at="2025-09-08T10:04:49 IST" name="verifyAllProductsPageIsVisible" finished-at="2025-09-08T10:04:49 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.TestRunner.LogoutRunner@f381794]" started-at="2025-09-08T11:52:48 IST" name="tearDownClass" finished-at="2025-09-08T11:52:48 IST" duration-ms="231" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAllProductsPageIsVisible -->
-        <test-method signature="verifyViewProductsFunctionality()[pri:3, instance:com.tests.VerifyAllProductsTest@6a03bcb1]" started-at="2025-09-08T10:04:49 IST" name="verifyViewProductsFunctionality" finished-at="2025-09-08T10:04:49 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyViewProductsFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.VerifyAllProductsTest@6a03bcb1]" started-at="2025-09-08T10:04:49 IST" name="tearDown" finished-at="2025-09-08T10:04:49 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.tests.VerifyAllProductsTest -->
-      <class name="com.tests.AddToCartTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.tests.AddToCartTest@58ea606c]" started-at="2025-09-08T10:04:48 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1757306088218" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initPageObjects()[pri:0, instance:com.tests.AddToCartTest@58ea606c]" started-at="2025-09-08T10:04:48 IST" name="initPageObjects" finished-at="2025-09-08T10:04:48 IST" duration-ms="55" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initPageObjects -->
-        <test-method signature="verifyHomePageIsVisible()[pri:1, instance:com.tests.AddToCartTest@58ea606c]" started-at="2025-09-08T10:04:48 IST" name="verifyHomePageIsVisible" finished-at="2025-09-08T10:04:48 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHomePageIsVisible -->
-        <test-method signature="verifyAddToCartFlow()[pri:2, instance:com.tests.AddToCartTest@58ea606c]" started-at="2025-09-08T10:04:48 IST" name="verifyAddToCartFlow" finished-at="2025-09-08T10:04:48 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddToCartFlow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.AddToCartTest@58ea606c]" started-at="2025-09-08T10:04:48 IST" name="tearDown" finished-at="2025-09-08T10:04:48 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.tests.AddToCartTest -->
-      <class name="com.tests.SubscriptionTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.tests.SubscriptionTest@610f7aa]" started-at="2025-09-08T10:04:49 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1757306089218" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initPages()[pri:0, instance:com.tests.SubscriptionTest@610f7aa]" started-at="2025-09-08T10:04:49 IST" name="initPages" finished-at="2025-09-08T10:04:49 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initPages -->
-        <test-method signature="verifyHomePageIsVisible()[pri:1, instance:com.tests.SubscriptionTest@610f7aa]" started-at="2025-09-08T10:04:49 IST" name="verifyHomePageIsVisible" finished-at="2025-09-08T10:04:49 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHomePageIsVisible -->
-        <test-method signature="verifySubscriptionFunctionality()[pri:2, instance:com.tests.SubscriptionTest@610f7aa]" started-at="2025-09-08T10:04:49 IST" name="verifySubscriptionFunctionality" finished-at="2025-09-08T10:04:49 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySubscriptionFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.SubscriptionTest@610f7aa]" started-at="2025-09-08T10:04:49 IST" name="tearDown" finished-at="2025-09-08T10:04:49 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.tests.SubscriptionTest -->
-      <class name="com.tests.RegistrationWhileCheckoutTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.tests.RegistrationWhileCheckoutTest@a1cdc6d]" started-at="2025-09-08T10:04:49 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1757306089120" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initPageObjects()[pri:0, instance:com.tests.RegistrationWhileCheckoutTest@a1cdc6d]" started-at="2025-09-08T10:04:49 IST" name="initPageObjects" finished-at="2025-09-08T10:04:49 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initPageObjects -->
-        <test-method signature="verifyCheckoutWithRegistrationFlow()[pri:0, instance:com.tests.RegistrationWhileCheckoutTest@a1cdc6d]" started-at="2025-09-08T10:04:49 IST" name="verifyCheckoutWithRegistrationFlow" finished-at="2025-09-08T10:04:49 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCheckoutWithRegistrationFlow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.RegistrationWhileCheckoutTest@a1cdc6d]" started-at="2025-09-08T10:04:49 IST" name="tearDown" finished-at="2025-09-08T10:04:49 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.tests.RegistrationWhileCheckoutTest -->
-      <class name="com.tests.IncreasedQuantityTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.tests.IncreasedQuantityTest@548e6d58]" started-at="2025-09-08T10:04:49 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1757306089070" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initPageObjects()[pri:0, instance:com.tests.IncreasedQuantityTest@548e6d58]" started-at="2025-09-08T10:04:49 IST" name="initPageObjects" finished-at="2025-09-08T10:04:49 IST" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initPageObjects -->
-        <test-method signature="verifyIncreaseQuantityFlow()[pri:0, instance:com.tests.IncreasedQuantityTest@548e6d58]" started-at="2025-09-08T10:04:49 IST" name="verifyIncreaseQuantityFlow" finished-at="2025-09-08T10:04:49 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyIncreaseQuantityFlow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.IncreasedQuantityTest@548e6d58]" started-at="2025-09-08T10:04:49 IST" name="tearDown" finished-at="2025-09-08T10:04:49 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.tests.IncreasedQuantityTest -->
-      <class name="com.tests.SubscriptionCartTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.tests.SubscriptionCartTest@3098cf3b]" started-at="2025-09-08T10:04:49 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1757306089187" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initPageObjects()[pri:0, instance:com.tests.SubscriptionCartTest@3098cf3b]" started-at="2025-09-08T10:04:49 IST" name="initPageObjects" finished-at="2025-09-08T10:04:49 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initPageObjects -->
-        <test-method signature="verifyHomePageIsVisible()[pri:1, instance:com.tests.SubscriptionCartTest@3098cf3b]" started-at="2025-09-08T10:04:49 IST" name="verifyHomePageIsVisible" finished-at="2025-09-08T10:04:49 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHomePageIsVisible -->
-        <test-method signature="verifySubscriptionFlow()[pri:2, instance:com.tests.SubscriptionCartTest@3098cf3b]" started-at="2025-09-08T10:04:49 IST" name="verifySubscriptionFlow" finished-at="2025-09-08T10:04:49 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySubscriptionFlow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.SubscriptionCartTest@3098cf3b]" started-at="2025-09-08T10:04:49 IST" name="tearDown" finished-at="2025-09-08T10:04:49 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.tests.SubscriptionCartTest -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.TestRunner.LogoutRunner -->
+    </test> <!-- Logout Test -->
+    <test started-at="2025-09-08T11:52:48 IST" name="Existing Registration Test" finished-at="2025-09-08T11:53:01 IST" duration-ms="12780">
       <class name="com.tests.ExistingRegistrationTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.tests.ExistingRegistrationTest@2f465398]" started-at="2025-09-08T10:04:49 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1757306089025" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.tests.ExistingRegistrationTest@5fa07e12]" started-at="2025-09-08T11:52:48 IST" name="setUp" finished-at="2025-09-08T11:52:57 IST" duration-ms="9131" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://automationexercise.com/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initPages()[pri:0, instance:com.tests.ExistingRegistrationTest@2f465398]" started-at="2025-09-08T10:04:49 IST" name="initPages" finished-at="2025-09-08T10:04:49 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="initPages()[pri:0, instance:com.tests.ExistingRegistrationTest@5fa07e12]" started-at="2025-09-08T11:52:57 IST" name="initPages" finished-at="2025-09-08T11:52:57 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPages -->
-        <test-method signature="verifyHomePageVisible()[pri:1, instance:com.tests.ExistingRegistrationTest@2f465398]" started-at="2025-09-08T10:04:49 IST" name="verifyHomePageVisible" finished-at="2025-09-08T10:04:49 IST" duration-ms="1" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="verifyHomePageVisible()[pri:1, instance:com.tests.ExistingRegistrationTest@5fa07e12]" started-at="2025-09-08T11:52:57 IST" name="verifyHomePageVisible" finished-at="2025-09-08T11:52:57 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomePageVisible -->
-        <test-method signature="clickSignupAndVerifyNewUserSignup()[pri:2, instance:com.tests.ExistingRegistrationTest@2f465398]" started-at="2025-09-08T10:04:49 IST" name="clickSignupAndVerifyNewUserSignup" finished-at="2025-09-08T10:04:49 IST" duration-ms="1" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="clickSignupAndVerifyNewUserSignup()[pri:2, instance:com.tests.ExistingRegistrationTest@5fa07e12]" started-at="2025-09-08T11:52:57 IST" name="clickSignupAndVerifyNewUserSignup" finished-at="2025-09-08T11:52:59 IST" duration-ms="1717" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickSignupAndVerifyNewUserSignup -->
-        <test-method signature="registerWithExistingEmailAndVerifyError()[pri:3, instance:com.tests.ExistingRegistrationTest@2f465398]" started-at="2025-09-08T10:04:49 IST" name="registerWithExistingEmailAndVerifyError" finished-at="2025-09-08T10:04:49 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="registerWithExistingEmailAndVerifyError()[pri:3, instance:com.tests.ExistingRegistrationTest@5fa07e12]" started-at="2025-09-08T11:52:59 IST" name="registerWithExistingEmailAndVerifyError" finished-at="2025-09-08T11:53:00 IST" duration-ms="1257" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerWithExistingEmailAndVerifyError -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.ExistingRegistrationTest@2f465398]" started-at="2025-09-08T10:04:49 IST" name="tearDown" finished-at="2025-09-08T10:04:49 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.ExistingRegistrationTest@5fa07e12]" started-at="2025-09-08T11:53:00 IST" name="tearDown" finished-at="2025-09-08T11:53:01 IST" duration-ms="233" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tests.ExistingRegistrationTest -->
+    </test> <!-- Existing Registration Test -->
+    <test started-at="2025-09-08T11:53:01 IST" name="Contact Us Form Tests" finished-at="2025-09-08T11:53:14 IST" duration-ms="13545">
       <class name="com.tests.ContactUsFormTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.tests.ContactUsFormTest@313b2ea6]" started-at="2025-09-08T10:04:48 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1757306088991" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.tests.ContactUsFormTest@51f116b8]" started-at="2025-09-08T11:53:01 IST" name="setUp" finished-at="2025-09-08T11:53:07 IST" duration-ms="6626" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://automationexercise.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initPages()[pri:0, instance:com.tests.ContactUsFormTest@313b2ea6]" started-at="2025-09-08T10:04:48 IST" name="initPages" finished-at="2025-09-08T10:04:48 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="initPages()[pri:0, instance:com.tests.ContactUsFormTest@51f116b8]" started-at="2025-09-08T11:53:07 IST" name="initPages" finished-at="2025-09-08T11:53:07 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPages -->
-        <test-method signature="verifyHomePageIsVisible()[pri:1, instance:com.tests.ContactUsFormTest@313b2ea6]" started-at="2025-09-08T10:04:48 IST" name="verifyHomePageIsVisible" finished-at="2025-09-08T10:04:48 IST" duration-ms="1" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="verifyHomePageIsVisible()[pri:1, instance:com.tests.ContactUsFormTest@51f116b8]" started-at="2025-09-08T11:53:07 IST" name="verifyHomePageIsVisible" finished-at="2025-09-08T11:53:07 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomePageIsVisible -->
-        <test-method signature="testContactUsFormSubmission()[pri:2, instance:com.tests.ContactUsFormTest@313b2ea6]" started-at="2025-09-08T10:04:49 IST" name="testContactUsFormSubmission" finished-at="2025-09-08T10:04:49 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="testContactUsFormSubmission()[pri:2, instance:com.tests.ContactUsFormTest@51f116b8]" started-at="2025-09-08T11:53:07 IST" name="testContactUsFormSubmission" finished-at="2025-09-08T11:53:14 IST" duration-ms="6292" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testContactUsFormSubmission -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.ContactUsFormTest@313b2ea6]" started-at="2025-09-08T10:04:49 IST" name="tearDown" finished-at="2025-09-08T10:04:49 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.ContactUsFormTest@51f116b8]" started-at="2025-09-08T11:53:14 IST" name="tearDown" finished-at="2025-09-08T11:53:14 IST" duration-ms="244" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tests.ContactUsFormTest -->
-      <class name="com.tests.SearchProductsTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.tests.SearchProductsTest@175b9425]" started-at="2025-09-08T10:04:49 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1757306089142" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+    </test> <!-- Contact Us Form Tests -->
+    <test started-at="2025-09-08T11:53:14 IST" name="Verify Test Case Tests" finished-at="2025-09-08T11:53:27 IST" duration-ms="12488">
+      <class name="com.tests.VerifyTestCaseTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.tests.VerifyTestCaseTest@7690781]" started-at="2025-09-08T11:53:14 IST" name="setUp" finished-at="2025-09-08T11:53:22 IST" duration-ms="8073" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://automationexercise.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initPages()[pri:0, instance:com.tests.SearchProductsTest@175b9425]" started-at="2025-09-08T10:04:49 IST" name="initPages" finished-at="2025-09-08T10:04:49 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="initPages()[pri:0, instance:com.tests.VerifyTestCaseTest@7690781]" started-at="2025-09-08T11:53:22 IST" name="initPages" finished-at="2025-09-08T11:53:22 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPages -->
-        <test-method signature="verifyHomePageIsVisible()[pri:1, instance:com.tests.SearchProductsTest@175b9425]" started-at="2025-09-08T10:04:49 IST" name="verifyHomePageIsVisible" finished-at="2025-09-08T10:04:49 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="verifyHomePageIsVisible()[pri:1, instance:com.tests.VerifyTestCaseTest@7690781]" started-at="2025-09-08T11:53:22 IST" name="verifyHomePageIsVisible" finished-at="2025-09-08T11:53:22 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomePageIsVisible -->
-        <test-method signature="verifyAllProductsPageIsVisible()[pri:2, instance:com.tests.SearchProductsTest@175b9425]" started-at="2025-09-08T10:04:49 IST" name="verifyAllProductsPageIsVisible" finished-at="2025-09-08T10:04:49 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="verifyTestCasesNavigation()[pri:2, instance:com.tests.VerifyTestCaseTest@7690781]" started-at="2025-09-08T11:53:22 IST" name="verifyTestCasesNavigation" finished-at="2025-09-08T11:53:26 IST" duration-ms="3833" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestCasesNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.VerifyTestCaseTest@7690781]" started-at="2025-09-08T11:53:26 IST" name="tearDown" finished-at="2025-09-08T11:53:27 IST" duration-ms="221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tests.VerifyTestCaseTest -->
+    </test> <!-- Verify Test Case Tests -->
+    <test started-at="2025-09-08T11:53:27 IST" name="Verify All Products Tests" finished-at="2025-09-08T11:53:45 IST" duration-ms="18557">
+      <class name="com.tests.VerifyAllProductsTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.tests.VerifyAllProductsTest@49dc7102]" started-at="2025-09-08T11:53:27 IST" name="setUp" finished-at="2025-09-08T11:53:34 IST" duration-ms="6950" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://automationexercise.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPages()[pri:0, instance:com.tests.VerifyAllProductsTest@49dc7102]" started-at="2025-09-08T11:53:34 IST" name="initPages" finished-at="2025-09-08T11:53:34 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPages -->
+        <test-method signature="verifyHomePageIsVisible()[pri:1, instance:com.tests.VerifyAllProductsTest@49dc7102]" started-at="2025-09-08T11:53:34 IST" name="verifyHomePageIsVisible" finished-at="2025-09-08T11:53:34 IST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageIsVisible -->
+        <test-method signature="verifyAllProductsPageIsVisible()[pri:2, instance:com.tests.VerifyAllProductsTest@49dc7102]" started-at="2025-09-08T11:53:34 IST" name="verifyAllProductsPageIsVisible" finished-at="2025-09-08T11:53:43 IST" duration-ms="8985" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAllProductsPageIsVisible -->
-        <test-method signature="verifySearchFunctionality()[pri:3, instance:com.tests.SearchProductsTest@175b9425]" started-at="2025-09-08T10:04:49 IST" name="verifySearchFunctionality" finished-at="2025-09-08T10:04:49 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\ankit\Downloads\AutomationExercise (2)\AutomationExercise\src\test\resources\testsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="verifyViewProductsFunctionality()[pri:3, instance:com.tests.VerifyAllProductsTest@49dc7102]" started-at="2025-09-08T11:53:43 IST" name="verifyViewProductsFunctionality" finished-at="2025-09-08T11:53:45 IST" duration-ms="1808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyViewProductsFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.VerifyAllProductsTest@49dc7102]" started-at="2025-09-08T11:53:45 IST" name="tearDown" finished-at="2025-09-08T11:53:45 IST" duration-ms="280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tests.VerifyAllProductsTest -->
+    </test> <!-- Verify All Products Tests -->
+    <test started-at="2025-09-08T11:53:45 IST" name="Search Products Tests" finished-at="2025-09-08T11:53:58 IST" duration-ms="12688">
+      <class name="com.tests.SearchProductsTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.tests.SearchProductsTest@65f095f8]" started-at="2025-09-08T11:53:45 IST" name="setUp" finished-at="2025-09-08T11:53:52 IST" duration-ms="7257" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://automationexercise.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPages()[pri:0, instance:com.tests.SearchProductsTest@65f095f8]" started-at="2025-09-08T11:53:52 IST" name="initPages" finished-at="2025-09-08T11:53:52 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPages -->
+        <test-method signature="verifyHomePageIsVisible()[pri:1, instance:com.tests.SearchProductsTest@65f095f8]" started-at="2025-09-08T11:53:52 IST" name="verifyHomePageIsVisible" finished-at="2025-09-08T11:53:52 IST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageIsVisible -->
+        <test-method signature="verifyAllProductsPageIsVisible()[pri:2, instance:com.tests.SearchProductsTest@65f095f8]" started-at="2025-09-08T11:53:53 IST" name="verifyAllProductsPageIsVisible" finished-at="2025-09-08T11:53:56 IST" duration-ms="3375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllProductsPageIsVisible -->
+        <test-method signature="verifySearchFunctionality()[pri:3, instance:com.tests.SearchProductsTest@65f095f8]" started-at="2025-09-08T11:53:56 IST" name="verifySearchFunctionality" finished-at="2025-09-08T11:53:57 IST" duration-ms="1319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.SearchProductsTest@175b9425]" started-at="2025-09-08T10:04:49 IST" name="tearDown" finished-at="2025-09-08T10:04:49 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.SearchProductsTest@65f095f8]" started-at="2025-09-08T11:53:58 IST" name="tearDown" finished-at="2025-09-08T11:53:58 IST" duration-ms="239" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tests.SearchProductsTest -->
-    </test> <!-- All UI Tests -->
-  </suite> <!-- AutomationExercise Suite -->
+    </test> <!-- Search Products Tests -->
+    <test started-at="2025-09-08T11:53:58 IST" name="Subscription Tests" finished-at="2025-09-08T11:54:10 IST" duration-ms="12106">
+      <class name="com.tests.SubscriptionTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.tests.SubscriptionTest@3d1cfad4]" started-at="2025-09-08T11:53:58 IST" name="setUp" finished-at="2025-09-08T11:54:05 IST" duration-ms="7286" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://automationexercise.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPages()[pri:0, instance:com.tests.SubscriptionTest@3d1cfad4]" started-at="2025-09-08T11:54:05 IST" name="initPages" finished-at="2025-09-08T11:54:05 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPages -->
+        <test-method signature="verifyHomePageIsVisible()[pri:1, instance:com.tests.SubscriptionTest@3d1cfad4]" started-at="2025-09-08T11:54:05 IST" name="verifyHomePageIsVisible" finished-at="2025-09-08T11:54:05 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageIsVisible -->
+        <test-method signature="verifySubscriptionFunctionality()[pri:2, instance:com.tests.SubscriptionTest@3d1cfad4]" started-at="2025-09-08T11:54:05 IST" name="verifySubscriptionFunctionality" finished-at="2025-09-08T11:54:10 IST" duration-ms="4269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubscriptionFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.SubscriptionTest@3d1cfad4]" started-at="2025-09-08T11:54:10 IST" name="tearDown" finished-at="2025-09-08T11:54:10 IST" duration-ms="262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tests.SubscriptionTest -->
+    </test> <!-- Subscription Tests -->
+    <test started-at="2025-09-08T11:54:10 IST" name="Subscription Cart Tests" finished-at="2025-09-08T11:54:22 IST" duration-ms="12325">
+      <class name="com.tests.SubscriptionCartTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.tests.SubscriptionCartTest@3738449f]" started-at="2025-09-08T11:54:10 IST" name="setUp" finished-at="2025-09-08T11:54:17 IST" duration-ms="6663" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://automationexercise.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPageObjects()[pri:0, instance:com.tests.SubscriptionCartTest@3738449f]" started-at="2025-09-08T11:54:17 IST" name="initPageObjects" finished-at="2025-09-08T11:54:17 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjects -->
+        <test-method signature="verifyHomePageIsVisible()[pri:1, instance:com.tests.SubscriptionCartTest@3738449f]" started-at="2025-09-08T11:54:17 IST" name="verifyHomePageIsVisible" finished-at="2025-09-08T11:54:17 IST" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageIsVisible -->
+        <test-method signature="verifySubscriptionFlow()[pri:2, instance:com.tests.SubscriptionCartTest@3738449f]" started-at="2025-09-08T11:54:17 IST" name="verifySubscriptionFlow" finished-at="2025-09-08T11:54:22 IST" duration-ms="5108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubscriptionFlow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.SubscriptionCartTest@3738449f]" started-at="2025-09-08T11:54:22 IST" name="tearDown" finished-at="2025-09-08T11:54:22 IST" duration-ms="235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tests.SubscriptionCartTest -->
+    </test> <!-- Subscription Cart Tests -->
+    <test started-at="2025-09-08T11:54:22 IST" name="Add To Cart Tests" finished-at="2025-09-08T11:54:43 IST" duration-ms="21175">
+      <class name="com.tests.AddToCartTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.tests.AddToCartTest@67080771]" started-at="2025-09-08T11:54:22 IST" name="setUp" finished-at="2025-09-08T11:54:29 IST" duration-ms="7045" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://automationexercise.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPageObjects()[pri:0, instance:com.tests.AddToCartTest@67080771]" started-at="2025-09-08T11:54:29 IST" name="initPageObjects" finished-at="2025-09-08T11:54:29 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjects -->
+        <test-method signature="verifyHomePageIsVisible()[pri:1, instance:com.tests.AddToCartTest@67080771]" started-at="2025-09-08T11:54:29 IST" name="verifyHomePageIsVisible" finished-at="2025-09-08T11:54:29 IST" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageIsVisible -->
+        <test-method signature="verifyAddToCartFlow()[pri:2, instance:com.tests.AddToCartTest@67080771]" started-at="2025-09-08T11:54:30 IST" name="verifyAddToCartFlow" finished-at="2025-09-08T11:54:43 IST" duration-ms="13441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddToCartFlow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.AddToCartTest@67080771]" started-at="2025-09-08T11:54:43 IST" name="tearDown" finished-at="2025-09-08T11:54:43 IST" duration-ms="359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tests.AddToCartTest -->
+    </test> <!-- Add To Cart Tests -->
+    <test started-at="2025-09-08T11:54:43 IST" name="Increase Quantity Tests" finished-at="2025-09-08T11:55:00 IST" duration-ms="16733">
+      <class name="com.tests.IncreasedQuantityTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.tests.IncreasedQuantityTest@2bfc268b]" started-at="2025-09-08T11:54:43 IST" name="setUp" finished-at="2025-09-08T11:54:51 IST" duration-ms="7503" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://automationexercise.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPageObjects()[pri:0, instance:com.tests.IncreasedQuantityTest@2bfc268b]" started-at="2025-09-08T11:54:51 IST" name="initPageObjects" finished-at="2025-09-08T11:54:51 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjects -->
+        <test-method signature="verifyIncreaseQuantityFlow()[pri:0, instance:com.tests.IncreasedQuantityTest@2bfc268b]" started-at="2025-09-08T11:54:51 IST" name="verifyIncreaseQuantityFlow" finished-at="2025-09-08T11:55:00 IST" duration-ms="8739" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIncreaseQuantityFlow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.IncreasedQuantityTest@2bfc268b]" started-at="2025-09-08T11:55:00 IST" name="tearDown" finished-at="2025-09-08T11:55:00 IST" duration-ms="295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tests.IncreasedQuantityTest -->
+    </test> <!-- Increase Quantity Tests -->
+    <test started-at="2025-09-08T11:55:00 IST" name="Registration while checkout Tests" finished-at="2025-09-08T11:55:23 IST" duration-ms="22372">
+      <class name="com.tests.RegistrationWhileCheckoutTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.tests.RegistrationWhileCheckoutTest@44821a96]" started-at="2025-09-08T11:55:00 IST" name="setUp" finished-at="2025-09-08T11:55:10 IST" duration-ms="9486" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://automationexercise.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPageObjects()[pri:0, instance:com.tests.RegistrationWhileCheckoutTest@44821a96]" started-at="2025-09-08T11:55:10 IST" name="initPageObjects" finished-at="2025-09-08T11:55:10 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjects -->
+        <test-method signature="verifyCheckoutWithRegistrationFlow()[pri:0, instance:com.tests.RegistrationWhileCheckoutTest@44821a96]" started-at="2025-09-08T11:55:10 IST" name="verifyCheckoutWithRegistrationFlow" finished-at="2025-09-08T11:55:22 IST" duration-ms="12331" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=139.0.7258.155)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [74d66f978cecac3e89669201516dbf0a, clickElement {id=f.7B6737B24B6CAE39F49BDA21E8CD92D8.d.6A38E4A1A95070241DF31518737BACD9.e.37}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\ankit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49386}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49386/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (74d66f978cecac3e89669201516dbf0a)] -> xpath: //*[@id='cartModal']/div/div/div[2]/p[2]/a/u]
+Session ID: 74d66f978cecac3e89669201516dbf0a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=139.0.7258.155)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [74d66f978cecac3e89669201516dbf0a, clickElement {id=f.7B6737B24B6CAE39F49BDA21E8CD92D8.d.6A38E4A1A95070241DF31518737BACD9.e.37}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\ankit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49386}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49386/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (74d66f978cecac3e89669201516dbf0a)] -> xpath: //*[@id='cartModal']/div/div/div[2]/p[2]/a/u]
+Session ID: 74d66f978cecac3e89669201516dbf0a
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
+at com.pages.RegistrationWhileCheckoutPage.clickViewCart(RegistrationWhileCheckoutPage.java:45)
+at com.tests.RegistrationWhileCheckoutTest.verifyCheckoutWithRegistrationFlow(RegistrationWhileCheckoutTest.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCheckoutWithRegistrationFlow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.RegistrationWhileCheckoutTest@44821a96]" started-at="2025-09-08T11:55:22 IST" name="tearDown" finished-at="2025-09-08T11:55:23 IST" duration-ms="311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tests.RegistrationWhileCheckoutTest -->
+    </test> <!-- Registration while checkout Tests -->
+    <test started-at="2025-09-08T11:55:23 IST" name="Registration Before checkout Tests" finished-at="2025-09-08T11:55:36 IST" duration-ms="12956">
+      <class name="com.tests.RegistrationBeforeCheckoutTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.tests.RegistrationBeforeCheckoutTest@120f102b]" started-at="2025-09-08T11:55:23 IST" name="setUp" finished-at="2025-09-08T11:55:29 IST" duration-ms="6190" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://automationexercise.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyPlaceOrderAfterSignup()[pri:0, instance:com.tests.RegistrationBeforeCheckoutTest@120f102b]" started-at="2025-09-08T11:55:29 IST" name="verifyPlaceOrderAfterSignup" finished-at="2025-09-08T11:55:35 IST" duration-ms="6335" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Not logged in properly expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Not logged in properly expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.tests.RegistrationBeforeCheckoutTest.verifyPlaceOrderAfterSignup(RegistrationBeforeCheckoutTest.java:55)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPlaceOrderAfterSignup -->
+        <test-method is-config="true" signature="initPageObjects()[pri:0, instance:com.tests.RegistrationBeforeCheckoutTest@120f102b]" started-at="2025-09-08T11:55:29 IST" name="initPageObjects" finished-at="2025-09-08T11:55:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjects -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.RegistrationBeforeCheckoutTest@120f102b]" started-at="2025-09-08T11:55:35 IST" name="tearDown" finished-at="2025-09-08T11:55:36 IST" duration-ms="214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tests.RegistrationBeforeCheckoutTest -->
+    </test> <!-- Registration Before checkout Tests -->
+  </suite> <!-- Suite -->
 </testng-results>

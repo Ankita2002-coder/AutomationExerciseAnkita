@@ -5,9 +5,6 @@ pipeline {
         APP_ENV = 'dev'
     }
 
-
-
-
     stages {
         stage('Clone') {
             steps {
@@ -27,8 +24,8 @@ pipeline {
             steps {
                 echo 'Publishing ExtentReports in Jenkins...'
                 publishHTML([
-                    reportDir: 'reports',               // matches your folder
-                    reportFiles: 'ExtentReports.html',  // file name
+                    reportDir: 'reports',
+                    reportFiles: 'ExtentReports.html',
                     reportName: 'Extent Report',
                     keepAll: true,
                     allowMissing: false,
@@ -40,7 +37,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo "Deploying to ${env.APP_ENV} environment..."
-                // Add your deployment logic here
+                // Your deployment logic goes here
             }
         }
     }
