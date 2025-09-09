@@ -32,7 +32,8 @@ pipeline {
         stage('Build & Test') {
             steps {
                
-                bat 'mvn clean test'-DsuiteXmlFile = 'testng.xml'
+                bat 'mvn clean test -DsuiteXmlFile= testng.xml'
+
             }
         }
 
