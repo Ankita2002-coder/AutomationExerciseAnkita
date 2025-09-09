@@ -37,7 +37,7 @@ pipeline {
                     echo 'Checking for changes to commit and push...'
 
                     withCredentials([usernamePassword(
-                        credentialsId: 'github-jenkins',
+                        credentialsId: 'Github-jenkins',
                         usernameVariable: 'GIT_USER',
                         passwordVariable: 'GIT_TOKEN')]) {
 
