@@ -12,6 +12,12 @@ pipeline {
     }
 
     stages {
+        stage('Clean Workspace') {
+            steps {
+                cleanWs()
+            }
+        }
+
         stage('Checkout from GitHub') {
             steps {
                 echo 'Checking out repository...'
@@ -45,8 +51,11 @@ pipeline {
                             REM Commit only if there are changes
                             git diff --cached --quiet || git commit -m "${COMMIT_MESSAGE}"
 
-                            REM Push using token
-                            git push https://%GIT_USER%:%GIT_TOKEN%@github.com/Ankita2002-coder/AutomationExerciseAnkita.git ${BRANCH_NAME}
+                            REM Push using token, retry once if push fails
+                            git push https://%GIT_USER%:%GIT_TOKEN%@github.com/Ankita2002-coder/AutomationExerciseAnkita.git ${BRANCH_NAME} || (
+                                echo "Push failed, retrying..."
+                                git push https://%GIT_USER%:%GIT_TOKEN%@github.com/Ankita2002-coder/AutomationExerciseAnkita.git ${BRANCH_NAME}
+                            )
                         """
                     }
                 }
