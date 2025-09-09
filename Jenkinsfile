@@ -3,37 +3,25 @@ pipeline {
 
     environment {
         BRANCH_NAME = 'main'
-        ECLIPSE_WORKSPACE = 'C:\\Users\\ankit\\eclipse-workspace\\AutomationExercise (2)\\AutomationExercise'
         COMMIT_MESSAGE = 'Jenkins: Auto-commit after build'
     }
 
-    // Poll GitHub every hour at a random minute
     triggers {
+        // Poll GitHub every hour
         pollSCM('H * * * *')
     }
 
     stages {
-        stage('Checkout from Git') {
+        stage('Checkout from GitHub') {
             steps {
-                echo 'Cloning repository from GitHub...'
-                git branch: "${env.BRANCH_NAME}", url: 'https://github.com/Ankita2002-coder/AutomationExerciseAnkita.git'
-            }
-        }
-
-        stage('Copy Files from Eclipse Workspace') {
-            steps {
-                bat """
-                    echo Copying files from Eclipse workspace...
-                    xcopy /E /Y /I "${ECLIPSE_WORKSPACE}\\*" "."
-                """
+                echo 'Checking out repository...'
+                checkout scm
             }
         }
 
         stage('Build & Test') {
             steps {
-               
                 bat 'mvn clean test -DsuiteXmlFile=testng.xml'
-
             }
         }
 
@@ -68,7 +56,6 @@ pipeline {
 
     post {
         always {
-            // Publish Extent Report
             publishHTML(target: [
                 allowMissing: false,
                 alwaysLinkToLastBuild: true,
@@ -78,13 +65,11 @@ pipeline {
                 reportName: 'Extent Report'
             ])
         }
-
         success {
             echo 'Pipeline completed successfully!'
         }
-
         failure {
-            echo ' Pipeline failed. Please check logs and Extent Report.'
+            echo 'Pipeline failed. Please check logs and Extent Report.'
         }
     }
 }
